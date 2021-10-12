@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html = style="height: 100%;">
+	<head>
+		<title>Atlas: Martan Continents</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="scripts/leaflet/leaflet.css">
+		<script src="scripts/leaflet/leaflet.js"></script>
+    <script src="scripts/custom/markers.js"></script>
+	</head>
+	
+	<body style="height: 100%;margin: 0;">
+		<div id="map" style="width: 100%; height: 100%; background: #000000;"></div>
+
+<!--Script Container-->
+  <script type="text/javascript">
+
+    //Map Layer Creation
+    var map = L.map('map').setView([0.000413, 0.00018], 24);
+    L.tileLayer('map/{z}/{x}/{y}.webp', {
+        continuousWorld: false,
+        noWrap: true,	
+        minZoom: 20,
+        maxZoom: 25,
+    }).addTo(map);
+
+    //Dummy Coordinate Marker
+    var marker = L.marker([0.000413, 0.00018], {
+        draggable: true,
+    }).addTo(map);
+    marker.bindPopup('LatLng Marker').openPopup();
+    marker.on('dragend', function(e) {
+        marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
+    });
+
+
+
+  /*
+  The following are coordinate markers.
+  */
+    var hes_duzakh = L.marker([0.000482, 0.000252]).bindPopup('<b>Duzakh</b>');
+
+
+/* 
+
+//Marker Visbility Controls
+  L.control.layers(null, overlays).addTo(map);
+
+//Marker Groups
+	var mg_towns = L.layerGroup([el_gulndar,el_teglhus]);
+	var mg_towers = L.layerGroup([el_ochri_college]);
+
+//Marker Overlay
+	var overlays={
+		"Towns" : mg_towns,
+		"Towers" : mg_towers,
+		}
+    
+*/
+
+
+
+  </script>
+<!--Script Container-->
+
+	</body>
+</html>
