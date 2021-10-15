@@ -29,7 +29,7 @@
     }).addTo(map);
     marker.bindPopup('LatLng Marker').openPopup();
     marker.on('dragend', function(e) {
-        marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
+    marker.getPopup().setContent(marker.getLatLng().toString()).openOn(map);
     });
 
 
@@ -41,27 +41,76 @@
     }
 });
 
-    var capitol = new LocIcon({iconUrl: 'icons/capitol.svg'});
-    var city = new LocIcon({iconUrl: 'icons/city.svg'});
-    var forest = new LocIcon({iconUrl: 'icons/forest.svg'});
-    var military = new LocIcon({iconUrl: 'icons/military.svg'});
-    var mountain = new LocIcon({iconUrl: 'icons/mountain.svg'});
-    var town = new LocIcon({iconUrl: 'icons/town.svg'});
-    var village = new LocIcon({iconUrl: 'icons/village.svg'});
-    var water = new LocIcon({iconUrl: 'icons/water.svg'});
+  var capitol = new LocIcon({iconUrl: 'icons/capitol.svg'});
+  var city = new LocIcon({iconUrl: 'icons/city.svg'});
+  var forest = new LocIcon({iconUrl: 'icons/forest.svg'});
+  var military = new LocIcon({iconUrl: 'icons/military.svg'});
+  var mountain = new LocIcon({iconUrl: 'icons/mountain.svg'});
+  var town = new LocIcon({iconUrl: 'icons/town.svg'});
+  var village = new LocIcon({iconUrl: 'icons/village.svg'});
+  var water = new LocIcon({iconUrl: 'icons/water.svg'});
 
-  /*
-  The following are coordinate markers.
-  */
+/*
+THE FOLLOWING ARE COORDINATE MARKER VARIABLES.
+*/
 
   /* Hesperides */
     //Capitols
 
+      //Leonychus
+      var hes_cap_kardia = L.marker([0.000467, 0.000226],{icon: capitol}).bindPopup('<b>Kardia</b>');
+      var hes_cap_asaak = L.marker([0.000454, 0.000293],{icon: capitol}).bindPopup('<b>Asaak</b>');
+      var hes_cap_kamran = L.marker([0.00044, 0.000291],{icon: capitol}).bindPopup('<b>Kamran</b>');
+      var hes_cap_tayakoli = L.marker([0.000447, 0.000274],{icon: capitol}).bindPopup('<b>Tayakoli</b>');
+      var hes_cap_enayat = L.marker([0.000437, 0.000277],{icon: capitol}).bindPopup('<b>Enayat</b>');
+      var hes_cap_orrin = L.marker([0.000429, 0.000292],{icon: capitol}).bindPopup('<b>Orrin</b>');
+      var hes_cap_herlaug = L.marker([0.000425, 0.00028],{icon: capitol}).bindPopup('<b>Herlaug</b>');
+      var hes_cap_valdis = L.marker([0.00042, 0.000294],{icon: capitol}).bindPopup('<b>Valdis</b>');
+      var hes_cap_vili = L.marker([0.00042, 0.000299],{icon: capitol}).bindPopup('<b>Vili</b>');
+      var hes_cap_hallvard = L.marker([0.000419, 0.000279],{icon: capitol}).bindPopup('<b>Hallvard</b>');
+      var hes_cap_gildr = L.marker([0.000414, 0.000273],{icon: capitol}).bindPopup('<b>Gildr</b>');
+      var hes_cap_asketill = L.marker([0.000407, 0.000261],{icon: capitol}).bindPopup('<b>Asketill</b>');
+      var hes_cap_xanthos = L.marker([0.000423, 0.000249],{icon: capitol}).bindPopup('<b>Xanthos</b>');
+      var hes_cap_kydonia = L.marker([0.000427, 0.000253],{icon: capitol}).bindPopup('<b>Kydonia</b>');
+      var hes_cap_iasg = L.marker([0.00043, 0.000248],{icon: capitol}).bindPopup('<b>Iasg</b>');
+      var hes_cap_reumh = L.marker([0.000435, 0.000264],{icon: capitol}).bindPopup('<b>Reumh</b>');
+      var hes_cap_portcaishen = L.marker([0.000447, 0.000235],{icon: capitol}).bindPopup('<b>Port Caishen</b>');
+
+      //Floraison
+      var hes_cap_pessac = L.marker([0.000396, 0.000272],{icon: capitol}).bindPopup('<b>Pessac</b>');
+
     //Cities
 
+      //Leonychus
+      var hes_cit_callipolis = L.marker([0.000459, 0.000215],{icon: city}).bindPopup('<b>Callipolis</b>');
+      var hes_cit_apollonia = L.marker([0.000467, 0.000237],{icon: city}).bindPopup('<b>Apollonia</b>');
+      var hes_cit_ambrosius = L.marker([0.000459, 0.00026],{icon: city}).bindPopup('<b>Ambrosius</b>');
+      var hes_cit_isfahan = L.marker([0.000451, 0.000288],{icon: city}).bindPopup('<b>Isfahan</b>');
+      var hes_cit_abbasi = L.marker([0.000448, 0.000292],{icon: city}).bindPopup('<b>Abbasi</b>');
+      var hes_cit_reza = L.marker([0.000445, 0.000285],{icon: city}).bindPopup('<b>Reza</b>');
+      var hes_cit_arzhang = L.marker([0.000451, 0.000272],{icon: city}).bindPopup('<b>Arzhang</b>');
+      var hes_cit_javad = L.marker([0.000436, 0.000295],{icon: city}).bindPopup('<b>Javad</b>');
+      var hes_cit_mar = L.marker([0.000429, 0.000298],{icon: city}).bindPopup('<b>Mar</b>');
+      var hes_cit_birstan = L.marker([0.000423, 0.00029],{icon: city}).bindPopup('<b>Birstan</b>');
+      var hes_cit_grimar = L.marker([0.000419, 0.000287],{icon: city}).bindPopup('<b>Grimar</b>');
+      var hes_cit_hrelling = L.marker([0.000412, 0.000268],{icon: city}).bindPopup('<b>Hrelling</b>');
+      var hes_cit_raghnall = L.marker([0.000412, 0.000247],{icon: city}).bindPopup('<b>Raghnall</b>');
+      var hes_cit_ainmire = L.marker([0.000415, 0.000241],{icon: city}).bindPopup('<b>Ainmire</b>');
+      var hes_cit_clothach = L.marker([0.000426, 0.000262],{icon: city}).bindPopup('<b>Clothach</b>');
+      var hes_cit_oldcliff = L.marker([0.000445, 0.00023],{icon: city}).bindPopup('<b>Oldcliff</b>');
+
+      //Floraison
+      var hes_cit_daxcitadel = L.marker([0.000399, 0.000272],{icon: city}).bindPopup('<b>Dax Citadel</b>');
+      var hes_cit_talence = L.marker([0.000391, 0.000284],{icon: city}).bindPopup('<b>Talence</b>');
+      var hes_cit_veritas = L.marker([0.000385, 0.000267],{icon: city}).bindPopup('<b>Veritas</b>');
+
     //Forests
+      //Leonychus
+      
+      //Floraison
 
     //Military Installations
+      //Leonychus
     var hes_mil_duzakh = L.marker([0.000482, 0.000252],{icon: military}).bindPopup('<b>Duzakh</b>');
     var hes_mil_alder = L.marker([0.00046, 0.00022],{icon: military}).bindPopup('<b>Fort Alder</b>');
     var hes_mil_craven = L.marker([0.000463, 0.000209],{icon: military}).bindPopup('<b>Fort Craven</b>');
@@ -81,25 +130,142 @@
     var hes_mil_halliwell = L.marker([0.00043, 0.000244],{icon: military}).bindPopup('<b>Fort Halliwell</b>');
     var hes_mil_holm = L.marker([0.00046, 0.000277],{icon: military}).bindPopup('<b>Fort Holm</b>');
     
+      //Floraison
     var hes_mil_dormont = L.marker([0.000402, 0.000274],{icon: military}).bindPopup('<b>Fort d\'Ormont</b>');
     var hes_mil_dalen = L.marker([0.000401, 0.000267],{icon: military}).bindPopup('<b>Fort d\'Alen</b>');
     var hes_mil_arlot = L.marker([0.000399, 0.000264],{icon: military}).bindPopup('<b>Fort Arlot</b>');
     var hes_mil_risban = L.marker([0.000396, 0.000262],{icon: military}).bindPopup('<b>Fort Risban</b>');
     var hes_mil_daurore = L.marker([0.000391, 0.000262],{icon: military}).bindPopup('<b>Fort d\'Aurore</b>');
-    var hes_mil_mahon = L.marker([0.00038, 0.000273],{icon: military}).bindPopup('<b>Fort Mahon</b>');
+    var hes_mil_mahon = L.marker([0.000381, 0.000273],{icon: military}).bindPopup('<b>Fort Mahon</b>');
+    var hes_mil_despoir = L.marker([0.000386, 0.00026],{icon: military}).bindPopup('<b>Fort d\'Espoir</b>');
+    var hes_mil_dorages = L.marker([0.000394, 0.000286],{icon: military}).bindPopup('<b>Fort d\'Orages</b>');
+    var hes_mil_calais = L.marker([0.000399, 0.000278],{icon: military}).bindPopup('<b>Fort Calais</b>');
+    var hes_mil_dos = L.marker([0.0004, 0.000265],{icon: military}).bindPopup('<b>Fort d\'Os</b>');
 
     //Mountains
+      //Leonychus
     var hes_mtn_alagar = L.marker([0.000494, 0.000267],{icon: mountain}).bindPopup('<b>Alagar Mountains</b>');
     var hes_mtn_racroft = L.marker([0.000482, 0.000274],{icon: mountain}).bindPopup('<b>Racroft Mountains</b>');
     var hes_mtn_saldiac = L.marker([0.00048, 0.000236],{icon: mountain}).bindPopup('<b>Saldiac Mountains</b>');
     var hes_mtn_exquet = L.marker([0.000422, 0.000252],{icon: mountain}).bindPopup('<b>Exquet Mountains</b>');
+
+      //Floraison
     var hes_mtn_tolsay = L.marker([0.000399, 0.00027],{icon: mountain}).bindPopup('<b>Tolsay Mountains</b>');
     var hes_mtn_mannach = L.marker([0.000391, 0.00027],{icon: mountain}).bindPopup('<b>Mannach Mountains</b>');
 
     //Towns
+      //Leonychus
+      var hes_tow_abydos = L.marker([0.000469, 0.000219],{icon: town}).bindPopup('<b>Abydos</b>');
+      var hes_tow_rivermeet = L.marker([0.000473, 0.000259],{icon: town}).bindPopup('<b>Rivermeet</b>');
+      var hes_tow_heloros = L.marker([0.00046, 0.000264],{icon: town}).bindPopup('<b>Heloros</b>');
+      var hes_tow_itanos = L.marker([0.000464, 0.000272],{icon: town}).bindPopup('<b>Itanos</b>');
+      var hes_tow_salamis = L.marker([0.000464, 0.000284],{icon: town}).bindPopup('<b>Salamis</b>');
+      var hes_tow_mountmead = L.marker([0.000467, 0.000294],{icon: town}).bindPopup('<b>Mountmead</b>');
+      var hes_tow_fahraj = L.marker([0.000449, 0.000295],{icon: town}).bindPopup('<b>Fahraj</b>');
+      var hes_tow_bayat = L.marker([0.00045, 0.000284],{icon: town}).bindPopup('<b>Bayat</b>');
+      var hes_tow_majid = L.marker([0.000446, 0.00028],{icon: town}).bindPopup('<b>Majid</b>');
+      var hes_tow_siavash = L.marker([0.000445, 0.00027],{icon: town}).bindPopup('<b>Siavash</b>');
+      var hes_tow_parsa = L.marker([0.000442, 0.000268],{icon: town}).bindPopup('<b>Parsa</b>');
+      var hes_tow_eleyphis = L.marker([0.000438, 0.000271],{icon: town}).bindPopup('<b>Eleyphis</b>');
+      var hes_tow_adaron = L.marker([0.000439, 0.000284],{icon: town}).bindPopup('<b>Adaron</b>');
+      var hes_tow_andvett = L.marker([0.000433, 0.000294],{icon: town}).bindPopup('<b>Andvett</b>');
+      var hes_tow_vidkunn = L.marker([0.000424, 0.000286],{icon: town}).bindPopup('<b>Vidkunn</b>');
+      var hes_tow_hadd = L.marker([0.000415, 0.000296],{icon: town}).bindPopup('<b>Hadd</b>');
+      var hes_tow_agmundr = L.marker([0.000416, 0.000278],{icon: town}).bindPopup('<b>Agmundr</b>');
+      var hes_tow_naddod = L.marker([0.000408, 0.000281],{icon: town}).bindPopup('<b>Naddod</b>');
+      var hes_tow_seakirk = L.marker([0.000407, 0.000277],{icon: town}).bindPopup('<b>Seakirk</b>');
+      var hes_tow_borstig = L.marker([0.000407, 0.000269],{icon: town}).bindPopup('<b>Borstig</b>');
+      var hes_tow_minka = L.marker([0.000417, 0.000264],{icon: town}).bindPopup('<b>Minka</b>');
+      var hes_tow_ayamonn = L.marker([0.000413, 0.000254],{icon: town}).bindPopup('<b>Ayamonn</b>');
+      var hes_tow_lochlainn = L.marker([0.000423, 0.000247],{icon: town}).bindPopup('<b>Lochlainn</b>');
+      var hes_tow_carhal = L.marker([0.000432, 0.000248],{icon: town}).bindPopup('<b>town_name</b>');
+
+      //Floraison
+      var hes_tow_ramsay = L.marker([0.000389, 0.000261],{icon: town}).bindPopup('<b>Ramsay</b>');
+      var hes_tow_bellegarde = L.marker([0.000392, 0.000274],{icon: town}).bindPopup('<b>Bellegarde</b>');
+      var hes_tow_rachdale = L.marker([0.000383, 0.000278],{icon: town}).bindPopup('<b>Rachdale</b>');
 
     //Villages
+      //Leonychus
+    var hes_vil_rizinia = L.marker([0.000462, 0.00021],{icon: village}).bindPopup('<b>Rizinia</b>');
+    var hes_vil_pitane = L.marker([0.000463, 0.000217],{icon: village}).bindPopup('<b>Pitane</b>');
+    var hes_vil_hewe = L.marker([0.000473, 0.000224],{icon: village}).bindPopup('<b>Hewe</b>');
+    var hes_vil_frostedge = L.marker([0.000474, 0.00023],{icon: village}).bindPopup('<b>Frostedge</b>');
+    var hes_vil_crescentvalley = L.marker([0.000476, 0.000234],{icon: village}).bindPopup('<b>Crescent Valley</b>');
+    var hes_vil_escarcha = L.marker([0.000475, 0.000243],{icon: village}).bindPopup('<b>Escarcha</b>');
+    var hes_vil_pinonera = L.marker([0.000471, 0.000248],{icon: village}).bindPopup('<b>Piñonera</b>');
+    var hes_vil_penketh = L.marker([0.000492, 0.000247],{icon: village}).bindPopup('<b>Penketh</b>');
+    var hes_vil_holmfirth = L.marker([0.000494, 0.000258],{icon: village}).bindPopup('<b>Holmfirth</b>');
+    var hes_vil_skegness = L.marker([0.000497, 0.00027],{icon: village}).bindPopup('<b>Skegness</b>');
+    var hes_vil_sutton = L.marker([0.000495, 0.000274],{icon: village}).bindPopup('<b>Sutton</b>');
+    var hes_vil_galdreth = L.marker([0.000493, 0.000277],{icon: village}).bindPopup('<b>Galdreth</b>');
+    var hes_vil_kilead = L.marker([0.000492, 0.000276],{icon: village}).bindPopup('<b>Kilead</b>');
+    var hes_vil_exeter = L.marker([0.000491, 0.000277],{icon: village}).bindPopup('<b>Exeter</b>');
+    var hes_vil_valledediamante = L.marker([0.000487, 0.000268],{icon: village}).bindPopup('<b>Valle de Diamante</b>');
+    var hes_vil_kinrith = L.marker([0.000488, 0.000287],{icon: village}).bindPopup('<b>Kinrith</b>');
+    var hes_vil_makrinos = L.marker([0.000485, 0.000282],{icon: village}).bindPopup('<b>Makrinos</b>');
+    var hes_vil_heartwood = L.marker([0.000481, 0.00027],{icon: village}).bindPopup('<b>Heartwood</b>');
+    var hes_vil_kald = L.marker([0.000472, 0.000273],{icon: village}).bindPopup('<b>Kald</b>');
+    var hes_vil_claethorpes = L.marker([0.000462, 0.000248],{icon: village}).bindPopup('<b>Claethorpes</b>');
+    var hes_vil_oakwood = L.marker([0.000461, 0.000251],{icon: village}).bindPopup('<b>Oakwood</b>');
+    var hes_vil_greenedge= L.marker([0.000468, 0.000265],{icon: village}).bindPopup('<b>Greenedge</b>');
+    var hes_vil_tarradale = L.marker([0.000468, 0.000275],{icon: village}).bindPopup('<b>Tarradale</b>');
+    var hes_vil_stratos = L.marker([0.000467, 0.000289],{icon: village}).bindPopup('<b>Stratos</b>');
+    var hes_vil_sybaris = L.marker([0.000463, 0.000293],{icon: village}).bindPopup('<b>Sybaris</b>');
+    var hes_vil_akylas = L.marker([0.000461, 0.000289],{icon: village}).bindPopup('<b>Akylas</b>');
+    var hes_vil_dumajran = L.marker([0.000458, 0.000294],{icon: village}).bindPopup('<b>Dumajran</b>');
+    var hes_vil_ganzak = L.marker([0.000448, 0.000283],{icon: village}).bindPopup('<b>Ganzak</b>');
+    var hes_vil_dvin = L.marker([0.000446, 0.000288],{icon: village}).bindPopup('<b>Dvin</b>');
+    var hes_vil_daving = L.marker([0.000442, 0.000271],{icon: village}).bindPopup('<b>Daving</b>');
+    var hes_vil_lauterbrunnen = L.marker([0.000434, 0.000282],{icon: village}).bindPopup('<b>Lauterbrunnen</b>');
+    var hes_vil_hillstop = L.marker([0.000436, 0.00029],{icon: village}).bindPopup('<b>Hillstop</b>');
+    var hes_vil_gudleif = L.marker([0.000433, 0.000288],{icon: village}).bindPopup('<b>Gudleif</b>');
+    var hes_vil_surt = L.marker([0.000432, 0.000284],{icon: village}).bindPopup('<b>Surt</b>');
+    var hes_vil_oddny = L.marker([0.000429, 0.000282],{icon: village}).bindPopup('<b>Oddny</b>');
+    var hes_vil_sigewulf = L.marker([0.000429, 0.000287],{icon: village}).bindPopup('<b>Sigewulf</b>');
+    var hes_vil_ulfheid = L.marker([0.000426, 0.000286],{icon: village}).bindPopup('<b>Uldheid</b>');
+    var hes_vil_eivor = L.marker([0.000426, 0.000291],{icon: village}).bindPopup('<b>Eivor</b>');
+    var hes_vil_synin = L.marker([0.000425, 0.000297],{icon: village}).bindPopup('<b>Synin</b>');
+    var hes_vil_stowe = L.marker([0.000421, 0.000288],{icon: village}).bindPopup('<b>Stowe</b>');
+    var hes_vil_lodbrok = L.marker([0.000421, 0.000294],{icon: village}).bindPopup('<b>Lodbrok</b>');
+    var hes_vil_midplains = L.marker([0.000413, 0.000294],{icon: village}).bindPopup('<b>Midplains</b>');
+    var hes_vil_dracfield = L.marker([0.000409, 0.00029],{icon: village}).bindPopup('<b>Dracfield</b>');
+    var hes_vil_shieling = L.marker([0.000412, 0.000285],{icon: village}).bindPopup('<b>Shieling</b>');
+    var hes_vil_eldham = L.marker([0.000411, 0.000281],{icon: village}).bindPopup('<b>Eldham</b>');
+    var hes_vil_farmersfield = L.marker([0.000418, 0.00027],{icon: village}).bindPopup('<b>Farmer\'s Field</b>');
+    var hes_vil_steinn = L.marker([0.00041, 0.000277],{icon: village}).bindPopup('<b>Steinn</b>');
+    var hes_vil_wavefront = L.marker([0.000404, 0.000279],{icon: village}).bindPopup('<b>Wavefront</b>');
+    var hes_vil_astrakane = L.marker([0.000404, 0.000268],{icon: village}).bindPopup('<b>Astrakane</b>');
+    var hes_vil_sakerkeep = L.marker([0.000405, 0.000259],{icon: village}).bindPopup('<b>Saker Keep</b>');
+    var hes_vil_willsden = L.marker([0.000409, 0.000263],{icon: village}).bindPopup('<b>Willsden</b>');
+    var hes_vil_yngvar = L.marker([0.000413, 0.000262],{icon: village}).bindPopup('<b>Yngvar</b>');
+    var hes_vil_cainnech = L.marker([0.000416, 0.000256],{icon: village}).bindPopup('<b>Cainneach</b>');
+    var hes_vil_teigue = L.marker([0.000415, 0.000248],{icon: village}).bindPopup('<b>Teigue</b>');
+    var hes_vil_tierney = L.marker([0.000411, 0.000243],{icon: village}).bindPopup('<b>Tierney</b>');
+    var hes_vil_coalville = L.marker([0.000424, 0.000257],{icon: village}).bindPopup('<b>Coalville</b>');
+    var hes_vil_defalls = L.marker([0.000428, 0.000245],{icon: village}).bindPopup('<b>Defalls</b>');
+    var hes_vil_muiris = L.marker([0.00043, 0.00025],{icon: village}).bindPopup('<b>Muiris</b>');
+    var hes_vil_muireach = L.marker([0.000431, 0.000256],{icon: village}).bindPopup('<b>Muireach</b>');
+    var hes_vil_daire = L.marker([0.000432, 0.000255],{icon: village}).bindPopup('<b>Daire</b>');
+    var hes_vil_estebahia = L.marker([0.000428, 0.000262],{icon: village}).bindPopup('<b>Estebahía</b>');
+    var hes_vil_gagoza = L.marker([0.000432, 0.000259],{icon: village}).bindPopup('<b>Gagoza</b>');
+    var hes_vil_cassair = L.marker([0.000433, 0.000259],{icon: village}).bindPopup('<b>Cassair</b>');
+    var hes_vil_labhras = L.marker([0.000433, 0.000266],{icon: village}).bindPopup('<b>Labhras</b>');
+    var hes_vil_islasalvaje = L.marker([0.000431, 0.000265],{icon: village}).bindPopup('<b>Isla Salvaje</b>');
+    var hes_vil_norcoast= L.marker([0.000448, 0.00023],{icon: village}).bindPopup('<b>Norcoast</b>');
+    var hes_vil_dorton = L.marker([0.000442, 0.000236],{icon: village}).bindPopup('<b>Dorton</b>');
+    var hes_vil_toftanes = L.marker([0.00044, 0.000239],{icon: village}).bindPopup('<b>Toftanes</b>');
 
+      //Floraison
+    var hes_vil_caen = L.marker([0.000399, 0.000268],{icon: village}).bindPopup('<b>Caen</b>');
+    var hes_vil_calucon = L.marker([0.000397, 0.000277],{icon: village}).bindPopup('<b>Caluçon</b>');
+    var hes_vil_vannes = L.marker([0.000397, 0.000265],{icon: village}).bindPopup('<b>Vannes</b>');
+    var hes_vil_orlak = L.marker([0.000388, 0.000266],{icon: village}).bindPopup('<b>Orlak</b>');
+    var hes_vil_larkinge = L.marker([0.000388, 0.000271],{icon: village}).bindPopup('<b>Larkinge</b>');
+    var hes_vil_briarrose = L.marker([0.000384, 0.000271],{icon: village}).bindPopup('<b>Briar Rose</b>');
+    var hes_vil_aramore = L.marker([0.00039, 0.000276],{icon: village}).bindPopup('<b>Aramore</b>');
+    var hes_vil_carlisle = L.marker([0.000395, 0.000281],{icon: village}).bindPopup('<b>Carlise</b>');
+    var hes_vil_honfleur = L.marker([0.000392, 0.000286],{icon: village}).bindPopup('<b>Honfleur</b>');
 
   /* Knife's Edge */
     //Capitols
@@ -170,7 +336,7 @@
     //Towns
 
     //Villages
-    var abh_vil_taewe = L.marker([0.000396, 0.000155],{icon: village}).bindPopup('<b>Taewe</b>');
+    var abh_vil_taewe = L.marker([0.000396, 0.000155],{icon: village}).bindPopup('<b>Taewe</b><p>A lone settlement at the heart of Abhainn. Difficult to find even when plotted on a map because of the untamed wilds.');
 
   /* Prizrak Drakona */
     //Capitols
@@ -192,15 +358,28 @@
 
     //Villages
 
-//Marker Groups
-	/* var capitols_group = L.layerGroup([
-    el_gulndar,
-    el_teglhus
-  ]);
-  */
+/*
+THE FOLLOWING ARE MARKER GROUPS.
+*/
 
-/* 	var cities_group = L.layerGroup([el_ochri_college]);
- */  
+/*
+var capitols_group = L.layerGroup([
+
+//Floraison
+  hes_cap_pessac
+]);
+*/
+
+/*
+var cities_group = L.layerGroup([
+
+//Floraison
+  hes_cit_daxcitadel,
+  hes_cit_talence,
+  hes_cit_veritas,
+]);
+*/  
+
 
 var forests_group = L.layerGroup([
   pri_for_valerian,
@@ -209,88 +388,473 @@ var forests_group = L.layerGroup([
 ]);
 
 
-/*  var military_group = L.layerGroup([el_ochri_college]);
- */ 
+/*
+var military_group = L.layerGroup([
 
- var mountains_group = L.layerGroup([
-    hes_mtn_alagar,
-    hes_mtn_racroft,
-    hes_mtn_saldiac,
-    hes_mtn_exquet,
-    hes_mtn_tolsay,
-    hes_mtn_mannach,
-    kni_mtn_sharpcliff,
-    kni_mtn_icebreak,
-    kni_mtn_suscona,
-    lam_mtn_uram,
-    lam_mtn_dulpeaks,
-    nog_mtn_trilug,
-    abh_mtn_cian,
-    abh_mtn_cresrood,
-    pri_mtn_tolbanov
-  ]);
+]);
+*/ 
 
-/* 	var towns_group = L.layerGroup([el_ochri_college]);
- */  
-/* var villages_group = L.layerGroup([el_ochri_college]);
+var mountains_group = L.layerGroup([
+  hes_mtn_alagar,
+  hes_mtn_racroft,
+  hes_mtn_saldiac,
+  hes_mtn_exquet,
+  hes_mtn_tolsay,
+  hes_mtn_mannach,
+  kni_mtn_sharpcliff,
+  kni_mtn_icebreak,
+  kni_mtn_suscona,
+  lam_mtn_uram,
+  lam_mtn_dulpeaks,
+  nog_mtn_trilug,
+  abh_mtn_cian,
+  abh_mtn_cresrood,
+  pri_mtn_tolbanov
+]);
+
+/*
+var towns_group = L.layerGroup([
+
+//Floraison
+  hes_tow_ramsay,
+  hes_tow_bellegarde,
+  hes_tow_rachdale,
+]);
  */
-  /* var hesperides_group = L.layerGroup([
-    hes_mtn_alagar,
-    hes_mtn_racroft,
-    hes_mtn_saldiac,
-    hes_mtn_exquet,
-    hes_mtn_tolsay,
-    hes_mtn_mannach,
-  ]); */
 
-/* 	var prizrak_drakona_group = L.layerGroup([
-    pri_mtn_tolbanov
-  ]); */
+/* var villages_group = L.layerGroup([
 
-/*   var lamorra_group = L.layerGroup([
-    lam_mtn_uram,
-    lam_mtn_dulpeaks
-  ]); */
+//Floraison
+  hes_vil_caen,
+  hes_vil_calucon,
+  hes_vil_vannes,
+  hes_vil_orlak,
+  hes_vil_larkinge,
+  hes_vil_briarrose,
+  hes_vil_aramore,
+  hes_vil_carlisle,
+  hes_vil_honfleur,
+]);
+*/
 
-	var abhainn_group = L.layerGroup([
-    abh_mtn_cian,
-    abh_mtn_cresrood,
-    abh_mil_ulnog,
-    abh_mil_ulzadon,
-    abh_vil_taewe
-  ]);
 
-/*   var knifes_edge_group = L.layerGroup([
-    kni_mtn_sharpcliff,
-    kni_mtn_icebreak,
-    kni_mtn_suscona,
-  ]); */
+var hesperides_group = L.layerGroup([
+  //Leonychus Empire
+  hes_cap_kardia,
+  hes_cap_asaak,
+  hes_cap_kamran,
+  hes_cap_tayakoli, 
+  hes_cap_enayat, 
+  hes_cap_orrin, 
+  hes_cap_herlaug, 
+  hes_cap_vili,
+  hes_cap_valdis, 
+  hes_cap_hallvard, 
+  hes_cap_gildr, 
+  hes_cap_asketill,
+  hes_cap_xanthos,
+  hes_cap_kydonia,
+  hes_cap_iasg,
+  hes_cap_reumh, 
+  hes_cap_portcaishen, 
+  hes_cit_callipolis, 
+  hes_cit_apollonia, 
+  hes_cit_ambrosius, 
+  hes_cit_isfahan, 
+  hes_cit_abbasi, 
+  hes_cit_reza, 
+  hes_cit_arzhang, 
+  hes_cit_javad, 
+  hes_cit_mar, 
+  hes_cit_birstan, 
+  hes_cit_grimar,
+  hes_cit_hrelling, 
+  hes_cit_raghnall, 
+  hes_cit_ainmire, 
+  hes_cit_clothach, 
+  hes_cit_oldcliff, 
+  hes_mil_duzakh,
+  hes_mil_alder,
+  hes_mil_craven,
+  hes_mil_quartermain,
+  hes_mil_khalida,
+  hes_mil_hughes,
+  hes_mil_adil,
+  hes_mil_yancey,
+  hes_mil_arcturus,
+  hes_mil_lim,
+  hes_mil_wil,
+  hes_mil_dy,
+  hes_mil_buttonwood,
+  hes_mil_batan,
+  hes_mil_swythe,
+  hes_mil_vera,
+  hes_mil_halliwell,
+  hes_mil_holm,
+  hes_mtn_alagar,
+  hes_mtn_racroft,
+  hes_mtn_saldiac,
+  hes_mtn_exquet,
+  hes_tow_abydos, 
+  hes_tow_rivermeet, 
+  hes_tow_heloros, 
+  hes_tow_itanos, 
+  hes_tow_salamis, 
+  hes_tow_mountmead,
+  hes_tow_fahraj, 
+  hes_tow_bayat, 
+  hes_tow_majid, 
+  hes_tow_siavash, 
+  hes_tow_parsa, 
+  hes_tow_eleyphis, 
+  hes_tow_adaron, 
+  hes_tow_andvett, 
+  hes_tow_vidkunn, 
+  hes_tow_hadd, 
+  hes_tow_agmundr, 
+  hes_tow_naddod, 
+  hes_tow_seakirk, 
+  hes_tow_borstig, 
+  hes_tow_minka, 
+  hes_tow_ayamonn, 
+  hes_tow_lochlainn, 
+  hes_tow_carhal,
+  hes_vil_rizinia,
+  hes_vil_pitane,
+  hes_vil_hewe,
+  hes_vil_frostedge,
+  hes_vil_crescentvalley,
+  hes_vil_escarcha,
+  hes_vil_pinonera,
+  hes_vil_penketh,
+  hes_vil_holmfirth,
+  hes_vil_skegness,
+  hes_vil_sutton,
+  hes_vil_galdreth,
+  hes_vil_kilead,
+  hes_vil_exeter,
+  hes_vil_valledediamante,
+  hes_vil_kinrith,
+  hes_vil_makrinos,
+  hes_vil_heartwood,
+  hes_vil_kald,
+  hes_vil_claethorpes,
+  hes_vil_oakwood,
+  hes_vil_greenedge,
+  hes_vil_tarradale,
+  hes_vil_stratos,
+  hes_vil_sybaris,
+  hes_vil_akylas,
+  hes_vil_dumajran,
+  hes_vil_ganzak,
+  hes_vil_dvin,
+  hes_vil_daving,
+  hes_vil_lauterbrunnen,
+  hes_vil_hillstop,
+  hes_vil_gudleif,
+  hes_vil_surt,
+  hes_vil_oddny,
+  hes_vil_sigewulf,
+  hes_vil_ulfheid,
+  hes_vil_eivor,
+  hes_vil_synin,
+  hes_vil_stowe,
+  hes_vil_lodbrok,
+  hes_vil_midplains,
+  hes_vil_dracfield,
+  hes_vil_shieling,
+  hes_vil_eldham,
+  hes_vil_farmersfield,
+  hes_vil_steinn,
+  hes_vil_wavefront,
+  hes_vil_astrakane,
+  hes_vil_sakerkeep,
+  hes_vil_willsden,
+  hes_vil_yngvar,
+  hes_vil_cainnech,
+  hes_vil_teigue,
+  hes_vil_tierney,
+  hes_vil_coalville,
+  hes_vil_defalls,
+  hes_vil_muiris,
+  hes_vil_muireach,
+  hes_vil_daire,
+  hes_vil_estebahia,
+  hes_vil_gagoza,
+  hes_vil_cassair,
+  hes_vil_labhras,
+  hes_vil_islasalvaje,
+  hes_vil_norcoast,
+  hes_vil_dorton,
+  hes_vil_toftanes,
 
-/*   var imperial_group = L.layerGroup([
+  //Floraison
+  hes_vil_caen,
+  hes_vil_calucon,
+  hes_vil_vannes,
+  hes_vil_orlak,
+  hes_vil_larkinge,
+  hes_vil_briarrose,
+  hes_vil_aramore,
+  hes_vil_carlisle,
+  hes_vil_honfleur,
+  hes_tow_ramsay,
+  hes_tow_bellegarde,
+  hes_tow_rachdale,
+  hes_mtn_tolsay,
+  hes_mtn_mannach,
+  hes_mil_dormont,
+  hes_mil_dalen,
+  hes_mil_arlot,
+  hes_mil_risban,
+  hes_mil_daurore,
+  hes_mil_mahon,
+  hes_mil_despoir,
+  hes_mil_dorages,
+  hes_mil_calais,
+  hes_mil_dos,
+  hes_cit_daxcitadel,
+  hes_cit_talence,
+  hes_cit_veritas,
+  hes_cap_pessac
+]); 
 
-  ]);  */
+/* 
+var prizrak_drakona_group = L.layerGroup([
+  pri_mtn_tolbanov
+]); 
+*/
+
+/*
+var lamorra_group = L.layerGroup([
+  lam_mtn_uram,
+  lam_mtn_dulpeaks
+]); 
+*/
+
+var abhainn_group = L.layerGroup([
+  abh_mtn_cian,
+  abh_mtn_cresrood,
+  abh_mil_ulnog,
+  abh_mil_ulzadon,
+  abh_vil_taewe
+]);
+
+/*
+var knifes_edge_group = L.layerGroup([
+  kni_mtn_sharpcliff,
+  kni_mtn_icebreak,
+  kni_mtn_suscona,
+]); 
+*/
+
+
+var imperial_group = L.layerGroup([
+  hes_cap_kardia,
+  hes_cap_asaak,
+  hes_cap_kamran,
+  hes_cap_tayakoli, 
+  hes_cap_enayat, 
+  hes_cap_orrin, 
+  hes_cap_herlaug,
+  hes_cap_vili, 
+  hes_cap_valdis, 
+  hes_cap_hallvard, 
+  hes_cap_gildr, 
+  hes_cap_asketill,
+  hes_cap_xanthos,
+  hes_cap_kydonia,
+  hes_cap_iasg,
+  hes_cap_reumh, 
+  hes_cap_portcaishen, 
+  hes_cit_callipolis, 
+  hes_cit_apollonia, 
+  hes_cit_ambrosius, 
+  hes_cit_isfahan, 
+  hes_cit_abbasi, 
+  hes_cit_reza, 
+  hes_cit_arzhang, 
+  hes_cit_javad, 
+  hes_cit_mar, 
+  hes_cit_birstan, 
+  hes_cit_grimar,
+  hes_cit_hrelling, 
+  hes_cit_raghnall, 
+  hes_cit_ainmire, 
+  hes_cit_clothach, 
+  hes_cit_oldcliff, 
+  hes_mil_duzakh,
+  hes_mil_alder,
+  hes_mil_craven,
+  hes_mil_quartermain,
+  hes_mil_khalida,
+  hes_mil_hughes,
+  hes_mil_adil,
+  hes_mil_yancey,
+  hes_mil_arcturus,
+  hes_mil_lim,
+  hes_mil_wil,
+  hes_mil_dy,
+  hes_mil_buttonwood,
+  hes_mil_batan,
+  hes_mil_swythe,
+  hes_mil_vera,
+  hes_mil_halliwell,
+  hes_mil_holm,
+  hes_mtn_alagar,
+  hes_mtn_racroft,
+  hes_mtn_saldiac,
+  hes_mtn_exquet,
+  hes_tow_abydos, 
+  hes_tow_rivermeet, 
+  hes_tow_heloros, 
+  hes_tow_itanos, 
+  hes_tow_salamis, 
+  hes_tow_mountmead,
+  hes_tow_fahraj, 
+  hes_tow_bayat, 
+  hes_tow_majid, 
+  hes_tow_siavash, 
+  hes_tow_parsa, 
+  hes_tow_eleyphis, 
+  hes_tow_adaron, 
+  hes_tow_andvett, 
+  hes_tow_vidkunn, 
+  hes_tow_hadd, 
+  hes_tow_agmundr, 
+  hes_tow_naddod, 
+  hes_tow_seakirk, 
+  hes_tow_borstig, 
+  hes_tow_minka, 
+  hes_tow_ayamonn, 
+  hes_tow_lochlainn, 
+  hes_tow_carhal,
+  hes_vil_rizinia,
+  hes_vil_pitane,
+  hes_vil_hewe,
+  hes_vil_frostedge,
+  hes_vil_crescentvalley,
+  hes_vil_escarcha,
+  hes_vil_pinonera,
+  hes_vil_penketh,
+  hes_vil_holmfirth,
+  hes_vil_skegness,
+  hes_vil_sutton,
+  hes_vil_galdreth,
+  hes_vil_kilead,
+  hes_vil_exeter,
+  hes_vil_valledediamante,
+  hes_vil_kinrith,
+  hes_vil_makrinos,
+  hes_vil_heartwood,
+  hes_vil_kald,
+  hes_vil_claethorpes,
+  hes_vil_oakwood,
+  hes_vil_greenedge,
+  hes_vil_tarradale,
+  hes_vil_stratos,
+  hes_vil_sybaris,
+  hes_vil_akylas,
+  hes_vil_dumajran,
+  hes_vil_ganzak,
+  hes_vil_dvin,
+  hes_vil_daving,
+  hes_vil_lauterbrunnen,
+  hes_vil_hillstop,
+  hes_vil_gudleif,
+  hes_vil_surt,
+  hes_vil_oddny,
+  hes_vil_sigewulf,
+  hes_vil_ulfheid,
+  hes_vil_eivor,
+  hes_vil_synin,
+  hes_vil_stowe,
+  hes_vil_lodbrok,
+  hes_vil_midplains,
+  hes_vil_dracfield,
+  hes_vil_shieling,
+  hes_vil_eldham,
+  hes_vil_farmersfield,
+  hes_vil_steinn,
+  hes_vil_wavefront,
+  hes_vil_astrakane,
+  hes_vil_sakerkeep,
+  hes_vil_willsden,
+  hes_vil_yngvar,
+  hes_vil_cainnech,
+  hes_vil_teigue,
+  hes_vil_tierney,
+  hes_vil_coalville,
+  hes_vil_defalls,
+  hes_vil_muiris,
+  hes_vil_muireach,
+  hes_vil_daire,
+  hes_vil_estebahia,
+  hes_vil_gagoza,
+  hes_vil_cassair,
+  hes_vil_labhras,
+  hes_vil_islasalvaje,
+  hes_vil_norcoast,
+  hes_vil_dorton,
+  hes_vil_toftanes
+]);  
   
-
-
-
+var floriason_group = L.layerGroup([
+  hes_vil_caen,
+  hes_vil_calucon,
+  hes_vil_vannes,
+  hes_vil_orlak,
+  hes_vil_larkinge,
+  hes_vil_briarrose,
+  hes_vil_aramore,
+  hes_vil_carlisle,
+  hes_vil_honfleur,
+  hes_tow_ramsay,
+  hes_tow_bellegarde,
+  hes_tow_rachdale,
+  hes_mtn_tolsay,
+  hes_mtn_mannach,
+  hes_mil_dormont,
+  hes_mil_dalen,
+  hes_mil_arlot,
+  hes_mil_risban,
+  hes_mil_daurore,
+  hes_mil_mahon,
+  hes_mil_despoir,
+  hes_mil_dorages,
+  hes_mil_calais,
+  hes_mil_dos,
+  hes_cit_daxcitadel,
+  hes_cit_talence,
+  hes_cit_veritas,
+  hes_cap_pessac
+]);
 
 //Marker Overlay
-	var poi_overlays={
+	var overlays={
+    //"Capitols": capitols_group,
+    //"Cities": cities_group,
+    //"Towns": towns_group,
+    //"Villages": villages_group,
+    //"Military Installations": military_group,
+
     "Mountains" : mountains_group,
     "Forests" : forests_group,
-		}
-    var continent_overlays={
-    "Abhainn": abhainn_group
-    //"Hesperides" : hesperides_group,
+    //"Bodies of Water": water_group,
+
+    "Abhainn": abhainn_group,
+    "Hesperides" : hesperides_group,
     //"Knife's Edge": knifes_edge_group,
     //"Lamorra": lamorra_group,
     //"Nograd": nograd_group,
-    //"Prizrak Drakona": prizrak_drakona_group
+    //"Prizrak Drakona": prizrak_drakona_group,
+
+    "Leonychus Empire": imperial_group,
+    "Floraison": floriason_group
 		}
     
 //Marker Visbility Controls
-L.control.layers(null, poi_overlays).addTo(map);
-L.control.layers(null, continent_overlays).addTo(map);
+L.control.layers(null, overlays).addTo(map);
 
   </script>
 <!--Script Container-->
