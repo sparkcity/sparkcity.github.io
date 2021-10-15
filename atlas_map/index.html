@@ -33,31 +33,264 @@
     });
 
 
+    //Custom Icons
+    var LocIcon = L.Icon.extend({
+    options: {
+        iconSize:     [30, 50],
+        popupAnchor:  [-3, -10]
+    }
+});
+
+    var capitol = new LocIcon({iconUrl: 'icons/capitol.svg'});
+    var city = new LocIcon({iconUrl: 'icons/city.svg'});
+    var forest = new LocIcon({iconUrl: 'icons/forest.svg'});
+    var military = new LocIcon({iconUrl: 'icons/military.svg'});
+    var mountain = new LocIcon({iconUrl: 'icons/mountain.svg'});
+    var town = new LocIcon({iconUrl: 'icons/town.svg'});
+    var village = new LocIcon({iconUrl: 'icons/village.svg'});
+    var water = new LocIcon({iconUrl: 'icons/water.svg'});
 
   /*
   The following are coordinate markers.
   */
-    var hes_duzakh = L.marker([0.000482, 0.000252]).bindPopup('<b>Duzakh</b>');
+
+  /* Hesperides */
+    //Capitols
+
+    //Cities
+
+    //Forests
+
+    //Military Installations
+    var hes_mil_duzakh = L.marker([0.000482, 0.000252],{icon: military}).bindPopup('<b>Duzakh</b>');
+    var hes_mil_alder = L.marker([0.00046, 0.00022],{icon: military}).bindPopup('<b>Fort Alder</b>');
+    var hes_mil_craven = L.marker([0.000463, 0.000209],{icon: military}).bindPopup('<b>Fort Craven</b>');
+    var hes_mil_quartermain = L.marker([0.000485, 0.00022],{icon: military}).bindPopup('<b>Fort Quartermain</b>');
+    var hes_mil_khalida = L.marker([0.00047, 0.000294],{icon: military}).bindPopup('<b>Fort Khalida</b>');
+    var hes_mil_hughes = L.marker([0.000456, 0.000295],{icon: military}).bindPopup('<b>Fort Hughes</b>');
+    var hes_mil_adil = L.marker([0.000466, 0.000242],{icon: military}).bindPopup('<b>Fort Adil</b>');
+    var hes_mil_yancey = L.marker([0.000446, 0.000234],{icon: military}).bindPopup('<b>Fort Yancey</b>');
+    var hes_mil_arcturus = L.marker([0.00044, 0.000234],{icon: military}).bindPopup('<b>Fort Arcturus</b>');
+    var hes_mil_lim = L.marker([0.000434, 0.000298],{icon: military}).bindPopup('<b>Fort Lim</b>');
+    var hes_mil_wil = L.marker([0.000424, 0.000298],{icon: military}).bindPopup('<b>Fort Wil</b>');
+    var hes_mil_dy = L.marker([0.000413, 0.000299],{icon: military}).bindPopup('<b>Fort Dy</b>');
+    var hes_mil_buttonwood = L.marker([0.000402, 0.000279],{icon: military}).bindPopup('<b>Fort Buttonwood</b>');
+    var hes_mil_batan = L.marker([0.000404, 0.000264],{icon: military}).bindPopup('<b>Fort Batan</b>');
+    var hes_mil_swythe = L.marker([0.000409, 0.000251],{icon: military}).bindPopup('<b>Fort Swythe</b>');
+    var hes_mil_vera = L.marker([0.000411, 0.000241],{icon: military}).bindPopup('<b>Fort Vera</b>');
+    var hes_mil_halliwell = L.marker([0.00043, 0.000244],{icon: military}).bindPopup('<b>Fort Halliwell</b>');
+    var hes_mil_holm = L.marker([0.00046, 0.000277],{icon: military}).bindPopup('<b>Fort Holm</b>');
+    
+    var hes_mil_dormont = L.marker([0.000402, 0.000274],{icon: military}).bindPopup('<b>Fort d\'Ormont</b>');
+    var hes_mil_dalen = L.marker([0.000401, 0.000267],{icon: military}).bindPopup('<b>Fort d\'Alen</b>');
+    var hes_mil_arlot = L.marker([0.000399, 0.000264],{icon: military}).bindPopup('<b>Fort Arlot</b>');
+    var hes_mil_risban = L.marker([0.000396, 0.000262],{icon: military}).bindPopup('<b>Fort Risban</b>');
+    var hes_mil_daurore = L.marker([0.000391, 0.000262],{icon: military}).bindPopup('<b>Fort d\'Aurore</b>');
+    var hes_mil_mahon = L.marker([0.00038, 0.000273],{icon: military}).bindPopup('<b>Fort Mahon</b>');
+
+    //Mountains
+    var hes_mtn_alagar = L.marker([0.000494, 0.000267],{icon: mountain}).bindPopup('<b>Alagar Mountains</b>');
+    var hes_mtn_racroft = L.marker([0.000482, 0.000274],{icon: mountain}).bindPopup('<b>Racroft Mountains</b>');
+    var hes_mtn_saldiac = L.marker([0.00048, 0.000236],{icon: mountain}).bindPopup('<b>Saldiac Mountains</b>');
+    var hes_mtn_exquet = L.marker([0.000422, 0.000252],{icon: mountain}).bindPopup('<b>Exquet Mountains</b>');
+    var hes_mtn_tolsay = L.marker([0.000399, 0.00027],{icon: mountain}).bindPopup('<b>Tolsay Mountains</b>');
+    var hes_mtn_mannach = L.marker([0.000391, 0.00027],{icon: mountain}).bindPopup('<b>Mannach Mountains</b>');
+
+    //Towns
+
+    //Villages
 
 
-/* 
+  /* Knife's Edge */
+    //Capitols
 
-//Marker Visbility Controls
-  L.control.layers(null, overlays).addTo(map);
+    //Cities
+
+    //Forests
+
+    //Military Installations
+
+    //Mountains
+    var kni_mtn_sharpcliff = L.marker([0.00049, 0.000158],{icon: mountain}).bindPopup('<b>Sharpcliff Mountains</b>');
+    var kni_mtn_icebreak = L.marker([0.000493, 0.000109],{icon: mountain}).bindPopup('<b>Icebreak Mountains</b>');
+    var kni_mtn_suscona = L.marker([0.00047, 0.000149],{icon: mountain}).bindPopup('<b>Mt. Suscona</b>');
+
+    //Towns
+
+    //Villages
+
+  /* Lamorra */
+    //Capitols
+
+    //Cities
+
+    //Forests
+
+    //Military Installations
+
+    //Mountains
+    var lam_mtn_uram = L.marker([0.000442, 0.000181],{icon: mountain}).bindPopup('<b>Uram Mountains</b>');
+    var lam_mtn_dulpeaks = L.marker([0.000456, 0.000146],{icon: mountain}).bindPopup('<b>Dulpeaks</b>');
+
+    //Towns
+
+    //Villages
+
+  /* Nograd */
+    //Capitols
+
+    //Cities
+
+    //Forests
+
+    //Military Installations
+
+    //Mountains
+    var nog_mtn_trilug = L.marker([0.000411, 0.000206],{icon: mountain}).bindPopup('<b>Trilug Mountains</b>');
+
+    //Towns
+
+    //Villages
+
+  /* Abhainn */
+    //Capitols
+
+    //Cities
+ 
+    //Forests
+
+    //Military Installations
+    var abh_mil_ulzadon = L.marker([0.000392, 0.000169],{icon: military}).bindPopup('<b>Ul\'Zadon</b>');
+    var abh_mil_ulnog = L.marker([0.000408, 0.000155],{icon: military}).bindPopup('<b>Ul\'Nog</b>');
+
+    //Mountains
+    var abh_mtn_cian = L.marker([0.000397, 0.000157],{icon: mountain}).bindPopup('<b>Cian Mountains</b>');
+    var abh_mtn_cresrood = L.marker([0.000384, 0.000144],{icon: mountain}).bindPopup('<b>Mt. Cresrood</b>');
+
+    //Towns
+
+    //Villages
+    var abh_vil_taewe = L.marker([0.000396, 0.000155],{icon: village}).bindPopup('<b>Taewe</b>');
+
+  /* Prizrak Drakona */
+    //Capitols
+
+    //Cities
+
+    //Forests
+    var pri_for_valerian = L.marker([0.000439, 0.000115],{icon: forest}).bindPopup('<b>Valerian Bamboo Grove</b> <p>A dense forest of bamboo that separates the border of Lamorra from Prizrak Drakona.</p>');
+    var pri_for_chemeris = L.marker([0.000444, 0.000075],{icon: forest}).bindPopup('<b>Chemeris Rainforest</b>');
+    var pri_for_khotov = L.marker([0.00041, 0.00009],{icon: forest}).bindPopup('<b>Khotov Rainforest</b>');
+
+
+    //Military Installations
+
+    //Mountains
+    var pri_mtn_tolbanov = L.marker([0.000452, 0.00009],{icon: mountain}).bindPopup('<b>Tolbanov Mountains</b>');
+
+    //Towns
+
+    //Villages
 
 //Marker Groups
-	var mg_towns = L.layerGroup([el_gulndar,el_teglhus]);
-	var mg_towers = L.layerGroup([el_ochri_college]);
+	/* var capitols_group = L.layerGroup([
+    el_gulndar,
+    el_teglhus
+  ]);
+  */
+
+/* 	var cities_group = L.layerGroup([el_ochri_college]);
+ */  
+
+var forests_group = L.layerGroup([
+  pri_for_valerian,
+  pri_for_chemeris,
+  pri_for_khotov
+]);
+
+
+/*  var military_group = L.layerGroup([el_ochri_college]);
+ */ 
+
+ var mountains_group = L.layerGroup([
+    hes_mtn_alagar,
+    hes_mtn_racroft,
+    hes_mtn_saldiac,
+    hes_mtn_exquet,
+    hes_mtn_tolsay,
+    hes_mtn_mannach,
+    kni_mtn_sharpcliff,
+    kni_mtn_icebreak,
+    kni_mtn_suscona,
+    lam_mtn_uram,
+    lam_mtn_dulpeaks,
+    nog_mtn_trilug,
+    abh_mtn_cian,
+    abh_mtn_cresrood,
+    pri_mtn_tolbanov
+  ]);
+
+/* 	var towns_group = L.layerGroup([el_ochri_college]);
+ */  
+/* var villages_group = L.layerGroup([el_ochri_college]);
+ */
+  /* var hesperides_group = L.layerGroup([
+    hes_mtn_alagar,
+    hes_mtn_racroft,
+    hes_mtn_saldiac,
+    hes_mtn_exquet,
+    hes_mtn_tolsay,
+    hes_mtn_mannach,
+  ]); */
+
+/* 	var prizrak_drakona_group = L.layerGroup([
+    pri_mtn_tolbanov
+  ]); */
+
+/*   var lamorra_group = L.layerGroup([
+    lam_mtn_uram,
+    lam_mtn_dulpeaks
+  ]); */
+
+	var abhainn_group = L.layerGroup([
+    abh_mtn_cian,
+    abh_mtn_cresrood,
+    abh_mil_ulnog,
+    abh_mil_ulzadon,
+    abh_vil_taewe
+  ]);
+
+/*   var knifes_edge_group = L.layerGroup([
+    kni_mtn_sharpcliff,
+    kni_mtn_icebreak,
+    kni_mtn_suscona,
+  ]); */
+
+/*   var imperial_group = L.layerGroup([
+
+  ]);  */
+  
+
+
+
 
 //Marker Overlay
-	var overlays={
-		"Towns" : mg_towns,
-		"Towers" : mg_towers,
+	var poi_overlays={
+    "Mountains" : mountains_group,
+    "Forests" : forests_group,
+		}
+    var continent_overlays={
+    "Abhainn": abhainn_group
+    //"Hesperides" : hesperides_group,
+    //"Knife's Edge": knifes_edge_group,
+    //"Lamorra": lamorra_group,
+    //"Nograd": nograd_group,
+    //"Prizrak Drakona": prizrak_drakona_group
 		}
     
-*/
-
-
+//Marker Visbility Controls
+L.control.layers(null, poi_overlays).addTo(map);
+L.control.layers(null, continent_overlays).addTo(map);
 
   </script>
 <!--Script Container-->
